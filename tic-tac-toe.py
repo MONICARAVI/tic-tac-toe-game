@@ -2,7 +2,7 @@ import time
     
 
 # Defining Constants
-    # Position 0 will be empty throughout the program
+# Position 0 will be empty throughout the program
 board = [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ']    
 player = 1    
        
@@ -25,7 +25,8 @@ def DrawBoard():
     print("   |   |   ")
     
    
-#This Function Checks position is empty or not    
+#This Function Checks position is empty or not.
+#If the player enters a place that is already filled it will return false.
 def CheckPosition(x):    
     if(board[x] == ' '):    
         return True    
@@ -76,7 +77,7 @@ print("Player 1 [X] --- Player 2 [O]\n")
 print()    
 print()    
 print("Please Wait...")    
-time.sleep(3)
+time.sleep(1.5)
 
 #Displays initial state of the board
 DrawBoard()
